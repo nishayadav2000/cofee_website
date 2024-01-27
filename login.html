@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>login page</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body background="img.webp">
+    <form>
+        <div class="imgcontainer">
+          <img src="img3.jpg" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="name" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="psw" required>
+      
+         
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+
+      <script>
+        function myfun()
+        {
+            var user,pass;
+            Username=document.getElementById("name").value;
+            Password=document.getElementById("psw").value;
+            if(Username="nisha" && Password=="nisha123")
+            {
+                window.location.href="index.html";
+            }
+            else{
+                alert("invalid data");
+                window.location.href="login.html";
+            }
+        }
+        
+        </script>
+
+        <input type="submit" value="Save" onclick="myfun()" class="btn">
+
+
+
+
+
+      
+    </body>
+      
+</html>
